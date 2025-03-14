@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabuada 2 a 9</title>
+</head>
+
+<body>
+    <script>
+        let multiplicando = prompt("Por favor, informe o número da tabuada (de 2 a 9)");
+
+        if (multiplicando >= 2 && multiplicando <= 9) {
+            //Escreva uma estrutura de repetição com while
+            //De modo a calcular a tabuada do multiplicando
+
+            let tabuada = 1; // Inicializa o contador
+            while (tabuada <= 10) {// Estrutura de repetição até o valor 10
+                let resultado = multiplicando * tabuada; // Calcula o resultado
+                document.write(multiplicando + " x " + tabuada + " = " + resultado + "<br>"); // Exibe o resultado
+                tabuada++; // Acresenta o contador
+            }
+            document.write("Easy");
+        } else {
+            document.write("Número inválido!");
+        }
+
+    </script>
+
+</body>
+
+</html>
